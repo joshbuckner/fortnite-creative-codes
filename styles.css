@@ -119,6 +119,12 @@ body {
 	padding: 0% 35%;
 }
 
+@media (min-width: 992px) {
+	.submit-map .container-fluid {
+		padding: 0% 35%;
+	}
+}
+
 .placeholder-center ::placeholder {
 	text-align: center;
 	font-size: 1.3rem;
