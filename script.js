@@ -113,3 +113,20 @@ function hideSubmit() {
     })
   }, false)
 }())
+
+function createMapTile() {
+  if ($("#map-name")[0].value !== "" && $("#author")[0].value !== "" && $("#island-code")[0].value !== "" && $("#category")[0].value !== "") {
+    $('#content .row').append('<div class="filter-div all ' + $("#category")[0].value + ' col-lg-4"><div class="card mb-4 shadow-sm text-white lighter-gray-section"><div class="card-header text-center card-heading-larger">' + $("#map-name")[0].value + '</div><img src="images/deathrun_island.jpg" class="card-img-top" alt="..."><div class="card-body"><p class="card-text text-center code-text">Code: ' + $("#island-code")[0].value + ' <br>(' + $("#author")[0].value + ')</p></div></div></div>');
+  }
+}
+  // map name input data
+  // console.log($("#map-name")[0].value);
+  // author input data
+  // console.log($("#author")[0].value);
+  // island code input data
+  // console.log($("#island-code")[0].value);
+  // file upload input data
+  // console.log($("#inputGroupFile01")[0].value);
+  // category selection input data
+  // console.log($("#category")[0].value);
+

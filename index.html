@@ -61,7 +61,7 @@
             <h1 class="jumbotron-heading">All</h1>
         </div>
     </section>
-    <section class="" id="">
+    <section class="" id="content">
         <div class="album py-5 light-gray-section">
             <div class="container">
                 <div class="row">
@@ -352,7 +352,7 @@
                 <form class="needs-validation placeholder-center" novalidate>
                     <div class="mb-5 input-group input-group-md">
                         <!-- <label for="author">Author</label> -->
-                        <input type="text" class="form-control text-center" id="map-namer" placeholder="Map Name" required>
+                        <input type="text" class="form-control text-center" id="map-name" placeholder="Map Name" required>
                         <div class="invalid-feedback">
                             Please enter a Map Name.
                         </div>
@@ -375,7 +375,7 @@
 										<div class="input-group mb-5 input-group-md">
 										  <div class="custom-file">
 										    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-										    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+										    <label class="custom-file-label" for="inputGroupFile01">Choose Photo</label>
 										  </div>
 										</div>
 
@@ -383,17 +383,17 @@
                         <!-- <label for="country">Country</label> -->
                         <select class="form-control custom-select d-block text-center" id="category" required>
                             <option value="">Choose Category</option class="p-4">
-                            <option class="p-4">Obstacle & Parkour</option>
-                            <option class="p-4">Racing</option>
-                            <option class="p-4">Multiplayer</option>
-                            <option class="p-4">Edit Courses</option>
-                            <option class="p-4">Creative Builds</option>
+                            <option value="obstacle-parkour" class="p-4">Obstacle & Parkour</option>
+                            <option value="racing" class="p-4">Racing</option>
+                            <option value="multiplayer" class="p-4">Multiplayer</option>
+                            <option value="edit-courses" class="p-4">Edit Courses</option>
+                            <option value="creative-builds" class="p-4">Creative Builds</option>
                         </select>
                         <div class="invalid-feedback">
                             Please select a Category.
                         </div>
                     </div>
-                    <button class="btn btn-outline-light btn-lg btn-block mb-5 p-4" type="submit">Submit</button>
+                    <button class="btn btn-outline-light btn-lg btn-block mb-5 p-4" type="submit" onclick="createMapTile();">Submit</button>
                 </form>
             </div>
         </div>
