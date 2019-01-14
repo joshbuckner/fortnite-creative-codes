@@ -119,9 +119,10 @@ body {
 	padding: 0% 35%;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 	.submit-map .container-fluid {
-		padding: 0%;
+		padding: 0% 10%;
+	
 	}
 }
 
