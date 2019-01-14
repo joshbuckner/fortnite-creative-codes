@@ -22,7 +22,7 @@ function filterSelection(c) {
     updateHeading();
 }
 
-function filterByMapName(c) {
+function filterByMapSearch(c) {
     for (var i = 0; i < btns.length; i++) {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
@@ -63,7 +63,7 @@ function removeClass(element, name) {
 }
 
 function searchCards() {
-    filterByMapName($("#search-input")[0].value.toLowerCase());
+    filterByMapSearch($("#search-input")[0].value.toLowerCase());
     displaySearchHeading();
 }
 
