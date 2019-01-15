@@ -18,12 +18,17 @@
 			<!-- Nav Bar -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-gray">
 				<div class="container-fluid">
+					<!-- Site Title -->
 					<a class="navbar-brand" href="#">Fortnite Creative Codes</a>
+					<!-- Mobile Nav Button -->
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
+					<!-- Navigation Links -->
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
 						<ul class="navbar-nav mr-auto" id="btn-container">
+
 							<li class="nav-item active">
 								<a class="nav-link btn-filter" href="#" onclick="hideSubmit();filterSelection('all');">All</a>
 							</li>
@@ -46,9 +51,14 @@
 								<a class="nav-link btn-filter" href="#" onclick="filterSelection('submit-map');showSubmit();">Submit Map</a>
 							</li>
 						</ul>
-						<form class="form-inline my-2 my-lg-0">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
-							<button class="btn btn-outline-light gray-outline my-2 my-sm-0" type="submit" id="search-submit" onclick="searchCards();hideSubmit();">Search</button>
+						<!-- Search Bar & Button -->
+						<form class="navbar-form form-inline my-2 my-lg-0">
+						
+								<div class="input-group center-search">
+									<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+									<button class="btn btn-outline-light gray-outline" type="submit" id="search-submit" onclick="searchCards();hideSubmit();">Search</button>
+								</div>
+
 						</form>
 					</div>
 				</div>
@@ -75,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="album py-5 light-gray-section">
+		<div class="album py-4 light-gray-section">
 			<div class="container">
 				<div class="row">
 
@@ -548,7 +558,7 @@
 			</div>
 		</div>
 		<div class="hidden filter-div submit-map text-white">
-			<div class="container-fluid creative-submit-background">
+			<div class="container-fluid creative-submit-background py-4">
 				<div class="submit-container">
 				<form autocomplete="off" class="needs-validation placeholder-center" novalidate>
 					<div class="mb-5 input-group input-group-md">
