@@ -118,10 +118,10 @@ function createMapTile() {
 		$("#author")[0].value !== "" &&
 		$("#island-code")[0].value !== "" &&
 		$("#category")[0].value !== "") {
-		$('#content .row').append('<a class="card-modal" href="#ModalCenter" data-toggle="modal" onclick="generateModalData(`' + $("#map-name")[0].value + '`, `images/image_not_found.jpg`, `' + $("#island-code")[0].value + '`, `' + $("#island-code")[0].value + '`);">' + 
+		$('#content .row').append('<a class="card-modal" href="#ModalCenter" data-toggle="modal" onclick="generateModalData(`' + $("#map-name")[0].value + '`, `' + $(".file-preview")[0].src + '`, `' + $("#island-code")[0].value + '`, `' + $("#island-code")[0].value + '`);">' + 
 			'<div class="filter-div all ' +
 			$("#category")[0].value + ' col-lg-4"><div class="card mb-4 shadow-sm text-white lighter-gray-section"><div class="card-header text-center card-heading-larger">' +
-			$("#map-name")[0].value + '</div><img src="images/image_not_found.jpg" class="card-img-top" alt="..."><div class="card-body"><p class="card-text text-center code-text">Code: ' +
+			$("#map-name")[0].value + '</div><img src="' + $(".file-preview")[0].src + '" class="card-img-top" alt="..."><div class="card-body"><p class="card-text text-center code-text">Code: ' +
 			$("#island-code")[0].value +
 			' <br>(' +
 			$("#author")[0].value + ')</p></div></div></a></div>');
@@ -144,4 +144,19 @@ function generateModalData(title, image, code, author,) {
 	$('#modal-image').attr("src", image);
 	$('#modal-code')[0].innerHTML = code;
 	$('#modal-author')[0].innerHTML = author;
+}
+
+function previewFile() {
+  var preview = $(".file-preview");
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview[0].src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  } 
+  $(".custom-file-label")[0].innerText = document.querySelector('input[type=file]').files[0].name;
 }

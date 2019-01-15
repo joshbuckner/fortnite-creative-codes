@@ -574,10 +574,13 @@
 					</div>
 					<div class="input-group mb-5 input-group-md">
 						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+							<input type="file" onchange="previewFile();" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
 							<label class="custom-file-label" for="inputGroupFile01">Choose Photo</label>
-						</div>
 					</div>
+					<div class="mb-1 mt-5 ml-2 mr-2 ">
+						<img src="images/fortnite_creative_2.jpg" class="file-preview ml-auto mr-auto img-fluid" height="" alt="Image preview...">
+						</div>
+				</div>
 					<div class="input-group mb-5 custom-category">
 						<!-- <label for="country">Country</label> -->
 						<select class="form-control custom-select d-block text-center" id="category" required>

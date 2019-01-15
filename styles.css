@@ -117,7 +117,7 @@ body {
 .creative-submit-background {
 	/*padding: 10%;
 	background-color: #1f1f1f;*/
-	background-image: url('images/fortnite_creative_2.jpg');
+	background-image: url('images/fortnite_creative_2.png');
 	background-size: cover;
 }
 .submit-container {
@@ -133,6 +133,11 @@ body {
 	.submit-map .container-fluid {
 		padding: 0% 10%;
 	}
+	/*.center-search {
+		margin: 0 auto;
+		padding: 0;
+	}*/
+
 }
 
 .placeholder-center ::placeholder {
@@ -152,3 +157,14 @@ a:link {
 	border: none;
 	padding: 0;
 }
+
+/*.form-inline .custom-select, .form-inline .input-group {
+	width: auto;
+
+}
+
+@media (max-width: 576px) {}
+.input-group .mr-sm-2, .input-group .mx-sm-2 {
+    margin-right: .5rem!important;
+}*/
+
