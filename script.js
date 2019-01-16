@@ -125,7 +125,9 @@ function createMapTile() {
 			$("#island-code")[0].value +
 			' <br>(' +
 			$("#author")[0].value + ')</p></div></div></a></div>');
+
 	}
+	return false;
 }
 // map name input data
 // console.log($("#map-name")[0].value);
